@@ -30,9 +30,10 @@ public class GiftCardTest
 	}*/
 	
 	@Test
-	public String deduct(double amount) 
+	public void deduct() 
 	{
+		double amount = 52.97;
 		GiftCard card = new GiftCard(1337,100.00);
-		return card.deduct(amount);
+		card.deduct(amount);
 	}
 }
